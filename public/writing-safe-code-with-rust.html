@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>reveal-md</title>
+    <link rel="stylesheet" href="./css/reveal.css" />
+    <link rel="stylesheet" href="./css/theme/solarized.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+    <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section ><section data-markdown><script type="text/template"># 👋
+</script></section><section data-markdown><script type="text/template">
+# I'm Seth
+</script></section></section><section ><section data-markdown><script type="text/template">
+<img width="60%" src="/img/rust-logo.svg" style="border: none; box-shadow: none; background: none;">
+</script></section><section data-markdown><script type="text/template">
+## What's Rust all about?
+</script></section><section data-markdown><script type="text/template">
+- Multi-paradigm (Mix of OOP & FP)
+- Compiles to a single binary
+- No runtime or garbage collector
+- Powerful type system, and macros
+- Fantastic tools, rich package ecosystem
+- Friendly community, great resources
+</script></section></section><section ><section data-markdown><script type="text/template">
+## What can I use it for?
+</script></section><section data-markdown><script type="text/template">
+"Rust is a systems language."
+</script></section><section data-markdown><script type="text/template">
+- OS level development.
+- Embedded programming.
+- CLI tooling.
+- Game development.
+- Web and network services.
+- Web front ends, via WASM!
+</script></section></section><section ><section data-markdown><script type="text/template">
+## Why would I want to use it?
+</script></section><section data-markdown><script type="text/template">
+# Safety!
+
+At both the *type* and *memory* levels.
+</script></section><section data-markdown><script type="text/template">
+# Productivity!
+
+Packages, tooling, and cross-platform compilation.
+</script></section><section data-markdown><script type="text/template">
+# Support!
+
+Amazon, Microsoft, Mozilla, Google, Facebook, etc.
+</script></section></section><section  data-markdown><script type="text/template">
+Let's talk about "safety"
+</script></section><section ><section data-markdown><script type="text/template">
+## Memory Safety
+</script></section><section data-markdown><script type="text/template">
+# Borrow Checker
+
+Strict compiler checking for unsafe memory usage.
+</script></section><section data-markdown><script type="text/template">
+Why is this a big deal?
+</script></section><section data-markdown><script type="text/template">
+**70% of all MS security bugs are memory safety issues.**
+
+<small>_https://www.zdnet.com/article/microsoft-70-percent-of-all-security-bugs-are-memory-safety-issues/_</small>
+</script></section><section data-markdown><script type="text/template">
+![](https://www.parity.io/content/images/2018/07/Linux-CVEs-in-2018.png)
+
+<small>_https://phil-opp.github.io/talk-konstanz-may-2018/#14_</small>
+</script></section><section data-markdown><script type="text/template">
+### How does it work?
+</script></section><section data-markdown><script type="text/template">
+**Tight control of how data is shared.**
+
+Ownership, borrowing, lifetime tracking.
+</script></section></section><section ><section data-markdown><script type="text/template">
+## Type Safety
+</script></section><section data-markdown><script type="text/template">
+Have confidence in your code.
+</script></section><section data-markdown><script type="text/template">
+- Enums (sum types)
+- Traits (type classes)
+- Pattern matching
+- Option and Result types
+</script></section><section data-markdown><script type="text/template">
+**More on thinking in types, March 6!**
+
+Noon, at the Advanced Learning Library.
+</script></section></section><section ><section data-markdown><script type="text/template">
+## What's the gist of all this?
+</script></section><section data-markdown><script type="text/template">
+~The compiler~ **Rust** makes you a better developer,
+</script></section><section data-markdown><script type="text/template">
+..and it's almost **always** a solid choice.
+</script></section></section><section ><section data-markdown><script type="text/template">
+## I'm sold! Now what?
+</script></section><section data-markdown><script type="text/template">
+### rust-lang.org
+
+- Install via Rustup
+- Learn with The Rust Book
+- Practice on Exercism
+- Ask questions and share in devICT!
+</script></section></section></div>
+    </div>
+
+    <script src="./js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './plugin/zoom-js/zoom.js', async: true },
+        { src: './plugin/notes/notes.js', async: true },
+        { src: './plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
