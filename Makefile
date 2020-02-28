@@ -1,6 +1,10 @@
-.PHONY: slides
+.PHONY: site
 
-slides:
+deploy: site
+	git commit -am 'make deploy'
+	git push
+
+site:
 	mkdir -p public/{img,notes}
 	for f in $$(ls talks); do if [[ -f talks/$$f/notes.md ]]; then cp talks/$$f/notes.md public/notes/$$f.md; fi; done
 	for f in $$(ls talks); do npx reveal-md --theme=solarized --static=public talks/$$f/slides.md && mv public/slides.html public/$$f.html; done
