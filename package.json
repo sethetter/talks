@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/sethetter/talks#readme",
   "devDependencies": {
-    "reveal-md": "^3.4.7"
+    "reveal-md": "^3.4.7",
+    "serve": "^11.3.0"
   }
 }
