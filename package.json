@@ -1,0 +1,22 @@
+{
+  "name": "talks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sethetter/talks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sethetter/talks/issues"
+  },
+  "homepage": "https://github.com/sethetter/talks#readme",
+  "devDependencies": {
+    "reveal-md": "^3.4.7"
+  }
+}
