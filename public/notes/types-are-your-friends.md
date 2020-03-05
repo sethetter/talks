@@ -1,10 +1,9 @@
-# OUTLINE
+# Types are your friends!
 
 - **What are types?**
   - In a programming language, all variables have a **type**.
     - Primitives: string, integer, function, object, array
     - Domain Specific: LoginRequest, User, BlogPost
-
 - **Programming languages can be typed in different ways.**
   - Dynamically typed
     - No need to specify types in your code, they're determined at runtime.
@@ -18,11 +17,9 @@
     - Example: `001.ts`
   - Many other categories of type systems in between **static** and **dynamic**.
     - Duck typing, gradual typing, optional typing, etc.
-
 - **Arguments for dynamic typing.**
   - Less cognitive overhead; just write your code and don't worry about types.
   - More flexibility; avoid restriction that a type system might impose.
-
 - **Valid arguments, but I'm here to convince you that static is better.**
   - Prevent an entire class of potential coding errors, for free.
     - Any code that misuses a type is caught during compilation.
@@ -33,6 +30,10 @@
     - We can read source code and understand behavior.
     - Types provide more information for understanding and shaping our program.
 
+
+
+## Examples
+
 - **Preventing type errors during runtime.**
   - Example: `02.js`
     - This file has an error, and maybe you can spot it quickly, but..
@@ -42,7 +43,6 @@
     - The same error exists here, but, the compiler catches it immediately.
     - A bit more code required to define the interface.
     - But even a simple example shows that a small time investment up front empowers the tooling to prevent runtime errors.
-
 - **Refactor with confidence.**
   - Example: `03.js`
     - What if the `location` property is renamed to `address`?
@@ -50,19 +50,19 @@
   - Example: `03.ts`
     - Shape of data changed.
     - Update `address` property name, and move name inside address.
-
-- **Types lead to a more organized mental model.**
-  - 
-  - TODO: Example
-    - New API endpoint, decide on request and response objects first.
-
-- **Work with the compiler, not against it.**
-  - ...
-  - TODO: Example
-    - Show conversational style of quick compiler feedback.
-      - 
-  - Write pseudocode, let compiler complain, and fill in the gaps.
-  
+- **Working with types.**
+  - **Example**: Express API with external API as data source.
+  - Type hints and info as we work with our tools.
+    - Express route handler function.
+  - Request and response objects.
+    - Fetch response object.
+  - Catching common mistakes.
+    - Simple mistakes.
+    - Possible `undefined` usage.
+    - Handling promises from `async` functions.
+  - Defining data structures first.
+    - Request and response objects.
+    - TMDB API responses.
 - **Ultimately, choose the right tool for the job, dependent on many factors.**
   - What is it that you're building?
   - How big and long-lived will the code base be?

@@ -1,8 +1,8 @@
-# Types are your friends!
+## Types are your friends!
 
 ---
 
-I'm Seth!
+I'm Seth
 
 ----
 
@@ -14,7 +14,7 @@ I have strong **opinions** about types.
 
 ---
 
-### What are types?
+## What are types?
 
 ----
 
@@ -22,30 +22,30 @@ A type defines what we can do with a thing in code.
 
 ----
 
-#### Primitive Types
+## Primitive Types
 
 string, number, boolean, function, object
 
 ----
 
-#### Domain Specific Types
+## Domain Specific Types
 
 LoginRequest, SiteUser, BlogPost, SaleReceipt
 
 ---
 
-### Types of Type Systems
+## Types of Type Systems
 
 ----
 
-#### Dynamically Typed
+## Dynamically Typed
 
 - Types determined when the code is run.
 - Incompatibilities result in runtime errors.
 
 ----
 
-#### Statically Typed
+## Statically Typed
 
 - Types specified (mostly) by you in the code.
 - Code is checked for incompatibilities before execution.
@@ -58,7 +58,7 @@ We're just going to focus on these two for today.
 
 ---
 
-#### Arguments for dynamic typing.
+## Arguments for dynamic typing.
 
 ----
 
@@ -78,7 +78,7 @@ _Completely valid arguments, but.._
 
 ---
 
-#### Arguments for static typing!
+## Arguments for static typing
 
 ----
 
@@ -94,4 +94,8 @@ _Completely valid arguments, but.._
 
 ---
 
-## Examples!
+![](https://media.giphy.com/media/lVHrrNULjBbd6/giphy.gif)
+
+---
+
+## Thanks!
