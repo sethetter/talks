@@ -23,7 +23,7 @@ I have strong **opinions** about types.
 </script></section></section><section ><section data-markdown><script type="text/template">
 ## What are types?
 </script></section><section data-markdown><script type="text/template">
-A type defines what we can do with a thing in code.
+In a programming language, all variables have a **type**.
 </script></section><section data-markdown><script type="text/template">
 ## Primitive Types
 
@@ -33,17 +33,31 @@ string, number, boolean, function, object
 
 LoginRequest, SiteUser, BlogPost, SaleReceipt
 </script></section></section><section ><section data-markdown><script type="text/template">
+A type defines what we can do with a thing in code.
+</script></section><section data-markdown><script type="text/template">
 ## Types of Type Systems
 </script></section><section data-markdown><script type="text/template">
 ## Dynamically Typed
 
 - Types determined when the code is run.
 - Incompatibilities result in runtime errors.
+
+```
+function add(x, y) {
+  return x + y;
+}
+```
 </script></section><section data-markdown><script type="text/template">
 ## Statically Typed
 
 - Types specified (mostly) by you in the code.
 - Code is checked for incompatibilities before execution.
+
+```
+function addTyped(x: number, y: number): number {
+  return x + y;
+}
+```
 </script></section><section data-markdown><script type="text/template">
 Many other types of types systems exist.
 

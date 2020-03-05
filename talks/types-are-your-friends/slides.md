@@ -18,7 +18,7 @@ I have strong **opinions** about types.
 
 ----
 
-A type defines what we can do with a thing in code.
+In a programming language, all variables have a **type**.
 
 ----
 
@@ -34,6 +34,10 @@ LoginRequest, SiteUser, BlogPost, SaleReceipt
 
 ---
 
+A type defines what we can do with a thing in code.
+
+----
+
 ## Types of Type Systems
 
 ----
@@ -43,12 +47,24 @@ LoginRequest, SiteUser, BlogPost, SaleReceipt
 - Types determined when the code is run.
 - Incompatibilities result in runtime errors.
 
+```
+function add(x, y) {
+  return x + y;
+}
+```
+
 ----
 
 ## Statically Typed
 
 - Types specified (mostly) by you in the code.
 - Code is checked for incompatibilities before execution.
+
+```
+function addTyped(x: number, y: number): number {
+  return x + y;
+}
+```
 
 ----
 

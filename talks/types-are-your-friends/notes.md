@@ -4,6 +4,10 @@
   - In a programming language, all variables have a **type**.
     - Primitives: string, integer, function, object, array
     - Domain Specific: LoginRequest, User, BlogPost
+- A type defines what you can do with a thing (typically a variable).
+    - Numbers can be added, multiplied, etc.
+    - Lists can be sorted, or reversed.
+    - A user object can tell you what it's name is.
 - **Programming languages can be typed in different ways.**
   - Dynamically typed
     - No need to specify types in your code, they're determined at runtime.
