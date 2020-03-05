@@ -25,22 +25,34 @@
 
 - **Valid arguments, but I'm here to convince you that static is better.**
   - Prevent an entire class of potential coding errors, for free.
+    - Any code that misuses a type is caught during compilation.
+      - Even better, during development!
   - Refactor your codebase with confidence.
-  - Learn to model your problems around data structures and operations.
-  - Work with the compiler, not against it.
+    - Encode changes into the types, compiler guides you through the rest.
+  - More information at your fingertips.
+    - We can read source code and understand behavior.
+    - Types provide more information for understanding and shaping our program.
 
 - **Preventing type errors during runtime.**
-  - ...
-  - Example: `02.js`, `02.ts`
+  - Example: `02.js`
+    - This file has an error, and maybe you can spot it quickly, but..
+    - When we try to run it, we get weird, unhelpful behavior.
+    - The _information_ we've received (`undefined`) is very indirect.
+  - Example: `02.ts`
+    - The same error exists here, but, the compiler catches it immediately.
+    - A bit more code required to define the interface.
+    - But even a simple example shows that a small time investment up front empowers the tooling to prevent runtime errors.
 
 - **Refactor with confidence.**
-  - ...
-  - Example: `03.js`, `03.ts`
+  - Example: `03.js`
+    - What if the `location` property is renamed to `address`?
+    - Find and replace?
+  - Example: `03.ts`
     - Shape of data changed.
     - Update `address` property name, and move name inside address.
-  
-- **Model your problems around data structures and operations.**
-  - ...
+
+- **Types lead to a more organized mental model.**
+  - 
   - TODO: Example
     - New API endpoint, decide on request and response objects first.
 

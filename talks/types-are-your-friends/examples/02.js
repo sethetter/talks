@@ -5,7 +5,7 @@ function formatAddress(customer) {
   let state = customer.address.state;
   let zip = customer.address.zip;
 
-  return `${name}\n${street}\n${city}, ${state} ${zip}}`;
+  return `${name}\n${street}\n${city}, ${state} ${zip}`;
 }
 
 let customer = {

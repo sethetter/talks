@@ -18,7 +18,7 @@ function formatAddressTyped2(customer: Customer): string {
   let state = customer.location.state;
   let zip = customer.location.zip;
 
-  return `${name}\n${street}\n${city}, ${state} ${zip}}`;
+  return `${name}\n${street}\n${city}, ${state} ${zip}`;
 }
 
 function statesServedTyped(customers: Customer[]): string[] {
@@ -28,4 +28,14 @@ function statesServedTyped(customers: Customer[]): string[] {
       if (out.indexOf(state) !== -1) return out;
       return out.concat([state]);
     }, []);
+}
+
+function locationListTyped(customers: Customer[]): Partial<Address>[] {
+  const locations = customers.map(c => ({
+    city: c.location.city,
+    state: c.location.state,
+    zip: c.location.zip
+  }));
+
+  return [...new Set(locations)];
 }
