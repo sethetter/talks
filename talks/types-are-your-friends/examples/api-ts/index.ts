@@ -39,7 +39,7 @@ app.listen(3000, () => console.log('Listening on 3000!'));
 /**
  * TMDB API
  */
-const TMDB_API_KEY = "874c5d5a093ae7e43035cd9a4bd4939c"; // Fill this in!
+const TMDB_API_KEY = ""; // Fill this in!
 
 interface Show {
   id: number,
