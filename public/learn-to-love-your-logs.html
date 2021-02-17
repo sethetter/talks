@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>reveal-md</title>
+    <link rel="stylesheet" href="./css/reveal.css" />
+    <link rel="stylesheet" href="./css/theme/solarized.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+    <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"># ❤️ Logs ❤️
+</script></section><section  data-markdown><script type="text/template">
+## Logs are important!
+
+- Engineering is about problem solving
+- To solve problems, you need information about the problem
+- Logs are the best source of information at your disposal
+</script></section><section  data-markdown><script type="text/template">
+## Spend time investing in your logs
+
+- Structured logging, attach metadata
+  - For web apps, attach request IDs
+  - Attach other useful information — current layer, etc
+- Use logging levels to be able to turn up the detail on demand
+  - Leave your debug logging in place as debug statements
+</script></section><section  data-markdown><script type="text/template">
+## Spend time investing in your ability to search those logs
+
+- Local development — keep them tailed, be able to search, pretty print
+- Deployed systems — tons of resources on this
+</script></section><section  data-markdown><script type="text/template">
+## Learning to work with your logs
+
+- Know your layers and where to find each layer's logs
+- Know the shape of your logs
+- Become familiar with important keywords worth searching for
+</script></section><section  data-markdown><script type="text/template">
+## Make it a habit
+
+If something isn't working, the _first_ thing you should do is search your logs
+</script></section></div>
+    </div>
+
+    <script src="./js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './plugin/zoom-js/zoom.js', async: true },
+        { src: './plugin/notes/notes.js', async: true },
+        { src: './plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
