@@ -10,7 +10,7 @@ let app = express();
 app.get("/shows/search", async (req, res) => {
   let q = req.query.query;
   try {
-    let show = await searchTmdb(q);
+    let show = searchTmdb(q);
     return res.json(show);
   } catch (e) {
     console.log(e);

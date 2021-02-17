@@ -13,7 +13,7 @@ interface Address {
 
 function formatAddressTyped(customer: Customer): string {
   let name = customer.name;
-  let street = customer.street;
+  let street = customer.address.street;
   let city = customer.address.city;
   let state = customer.address.state;
   let zip = customer.address.zip;

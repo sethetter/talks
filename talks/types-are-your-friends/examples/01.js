@@ -4,4 +4,4 @@ function add(x, y) {
 }
 
 console.log(`2 + 3 = ${add(2, 3)}`);
-console.log(`2 + sup = ${add(2, "sup")}`); // Did we _mean_ to give this a string?
+console.log(`2 + sup = ${add(2, "2")}`); // Did we _mean_ to give this a string?
