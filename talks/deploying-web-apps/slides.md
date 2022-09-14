@@ -54,11 +54,44 @@ not what you'll need in 5 years.
 
 ---
 
-## What if I want to do it "The RIght Way"
+### Do I need a front end?
+
+- Are your users going to interact with a UI?
 
 ---
 
-...
+### Do I need a database?
+
+- Do you need to store data?
+- Can you use a managed service like Firebase?
+- Is a no-code datastore like Airtable viable?
+
+---
+
+### Do I need a back end?
+
+- If you need a database, yes
+- If you need a place to hold sensitive data
+- If you need to integrate with other services
+  - ..and can't expose your credentials on the front end
+
+---
+
+### Do I need to integrate with other services?
+
+- Send emails, texts, or integrating with third party APIs
+- Will most likely need a backend for this
+- Zapier can help here as well
+
+---
+
+## What if I want to do it "The Right Way"
+
+---
+
+- What's the goal of this project?
+- Launching is the most important thing
+- Databases and backends open up security concerns
 
 ---
 
