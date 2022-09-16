@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>notes</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="./notes.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<ul>
+<li>You have an idea for something cool to build on the web
+<ul>
+<li>How should you build it?</li>
+<li>How should you launch it?</li>
+</ul></li>
+<li>What if I choose the wrong tool?
+<ul>
+<li>Paying more than you have to.</li>
+<li>Unnecessary complexity.</li>
+<li>Tons of features you don’t need.</li>
+<li>Less time to focus on your actual idea.</li>
+</ul></li>
+<li>How do I know what I need?
+<ul>
+<li>Focus on what you need now, not what you’ll need in 5 years.</li>
+<li>Components of increasing complexity
+<ul>
+<li>Front end</li>
+<li>Back end</li>
+<li>Database</li>
+<li>Integrations</li>
+</ul></li>
+</ul></li>
+<li>Some options
+<ul>
+<li>No code solutions
+<ul>
+<li>Forms with Google Form or TypeForm</li>
+<li>Data with Airtable or Google Sheets</li>
+<li>Automation with <a href="https://zapier.com">Zapier</a>
+<ul>
+<li>Zapier also has no-code data and interface solutions, in beta!</li>
+</ul></li>
+</ul></li>
+<li>Front end only
+<ul>
+<li>Static sites on Netlify</li>
+</ul></li>
+<li>Front end with serverless functions
+<ul>
+<li>Vercel with Nextjs</li>
+</ul></li>
+<li>Managed backend
+<ul>
+<li>Fly.io, Heroku</li>
+</ul></li>
+<li>AWS / GCP / Azure
+<ul>
+<li>Nuclearjk</li>
+</ul></li>
+</ul></li>
+<li>Questions to ask yourself
+<ul>
+<li>Do I need a front end?
+<ul>
+<li>Are your users going to interact with a UI?</li>
+</ul></li>
+<li>Do I need a database?</li>
+<li>Do you need to store data?</li>
+<li>Can you use a managed service like Firebase?</li>
+<li>Is a no-code datastore like Airtable viable?</li>
+<li>Do I need a back end?
+<ul>
+<li>If you need a database, yes</li>
+<li>If you need a place to hold sensitive data</li>
+<li>If you need to integrate with other services
+<ul>
+<li>..and can’t expose your credentials on the front end</li>
+</ul></li>
+</ul></li>
+<li>Do I need to integrate with other services?
+<ul>
+<li>Send emails, texts, or other SaaS services</li>
+<li>Will most likely need a backend for this</li>
+<li>Zapier can help here as well</li>
+</ul></li>
+</ul></li>
+<li>What about doing it “The Right Way”?
+<ul>
+<li>What’s the goal of this project?</li>
+<li>Launching is the most important thing</li>
+<li>Databases and backends open up security concerns</li>
+<li>Managing infrastructure is it’s own job</li>
+</ul></li>
+<li>What’s the moral of this story?
+<ul>
+<li>Infrastructure is its own beast. Keep it tame!</li>
+<li>Only use what you need, you can adapt later.</li>
+<li>If you need the complexity, keep it tame!</li>
+</ul></li>
+</ul>
+</body>
+</html>

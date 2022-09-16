@@ -1,0 +1,54 @@
+- You have an idea for something cool to build on the web
+  - How should you build it?
+  - How should you launch it?
+- What if I choose the wrong tool?
+  - Paying more than you have to.
+  - Unnecessary complexity.
+  - Tons of features you don't need.
+  - Less time to focus on your actual idea.
+- How do I know what I need?
+  - Focus on what you need now, not what you'll need in 5 years.
+  - Components of increasing complexity
+    - Front end
+    - Back end
+    - Database
+    - Integrations
+- Some options
+  - No code solutions
+    - Forms with Google Form or TypeForm
+    - Data with Airtable or Google Sheets
+    - Automation with [Zapier](https://zapier.com)
+      - Zapier also has no-code data and interface solutions, in beta!
+  - Front end only
+    - Static sites on Netlify
+  - Front end with serverless functions
+    - Vercel with Nextjs
+  - Managed backend
+    - Fly.io, Heroku
+  - AWS / GCP / Azure
+    - Nuclearjk
+- Questions to ask yourself
+  - Do I need a front end?
+    - Are your users going to interact with a UI?
+  - Do I need a database?
+  - Do you need to store data?
+  - Can you use a managed service like Firebase?
+  - Is a no-code datastore like Airtable viable?
+  - Do I need a back end?
+    - If you need a database, yes
+    - If you need a place to hold sensitive data
+    - If you need to integrate with other services
+      - ..and can't expose your credentials on the front end
+  - Do I need to integrate with other services?
+    - Send emails, texts, or other SaaS services
+    - Will most likely need a backend for this
+    - Zapier can help here as well
+- What about doing it "The Right Way"?
+  - What's the goal of this project?
+  - Launching is the most important thing
+  - Databases and backends open up security concerns
+  - Managing infrastructure is it's own job
+- What's the moral of this story?
+  - Infrastructure is its own beast. Keep it tame!
+  - Only use what you need, you can adapt later.
+  - If you need the complexity, keep it tame!
