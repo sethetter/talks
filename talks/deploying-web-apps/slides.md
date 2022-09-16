@@ -195,20 +195,20 @@ https://digitalocean.com/
 
 ---
 
+## Terraform!
+
+- Infrastructure as code, version controlled
+- Single source of truth for your infrastrcture
+- Many "providers": AWS, Netlify, etc etc
+
+---
+
 ## When is complexity worth it?
 
 - **_Know what you're gaining_**
 - Need more control: performance, cost, etc
 - Large scales, hitting limits of other services
 - You can afford engineers to manage it
-
----
-
-## Terraform!
-
-- Infrastructure as code, version controlled
-- Single source of truth for your infrastrcture
-- Many "providers": AWS, Netlify, etc etc
 
 ---
 
@@ -219,6 +219,15 @@ https://digitalocean.com/
   - what format it is in
   - how you can move it between services
 - Zapier Transfer for moving data around!
+
+---
+
+## Some caveats
+
+- Maybe the simple option is poorly designed
+- Maybe the simple option is expensive
+- Maybe you're comfortable with certain tools
+- Maybe you're trying to learn something
 
 ---
 
