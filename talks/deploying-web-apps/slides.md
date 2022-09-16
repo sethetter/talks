@@ -212,7 +212,7 @@ https://digitalocean.com/
 
 ---
 
-# What about migrating later?
+## What about migrating later?
 
 - Understand..
   - where your data is stored
@@ -222,7 +222,7 @@ https://digitalocean.com/
 
 ---
 
-### What's the moral of this story?
+## What's the moral of this story?
 
 - Infrastructure is it's own beast. Keep it tame!
 - Only use what you need, you can adapt later
