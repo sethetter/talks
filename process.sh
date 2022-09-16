@@ -19,5 +19,4 @@ for f in $(ls talks); do \
   fi
 done
 
-
-
+echo 'body .reveal { font-size: 30px; }' >> public/css/reveal.css

@@ -1604,3 +1604,4 @@ body {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+body .reveal { font-size: 30px; }

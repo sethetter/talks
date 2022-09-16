@@ -39,9 +39,11 @@ not what you'll need in 5 years.
 ## Components of increasing complexity
 
 - Front end
-- Back end
-- Database
-- Integrations
+- Serverless functions
+- External integrations
+- Database server
+- Application server
+- Kubernetes?!
 
 ---
 
@@ -52,6 +54,8 @@ not what you'll need in 5 years.
 ## Do I need a front end?
 
 - Are your users going to interact with a UI?
+- Do you need to display information to your users?
+- Will people access your product through a browser?
 
 ---
 
@@ -77,7 +81,11 @@ Anything from serverless functions to running servers
 ## Do I need other services?
 
 - Send emails, texts, or other SaaS services
-- Zapier can help here as well
+- Can happen with no-code as well (Zapier!)
+
+---
+
+<small>_Full disclosure, I work at Zapier, and am working on some cool things! Lets' talk about it :)_</snall>
 
 ---
 
@@ -99,8 +107,6 @@ Anything from serverless functions to running servers
 - Forms with Google Form or TypeForm
 - Data with Airtable or Google Sheets
 - Automation with [Zapier](https://zapier.com)
-
-<small>_Full disclosure, I work at Zapier, and am working on some cool things! Lets' talk about it :)_</snall>
 
 ---
 
