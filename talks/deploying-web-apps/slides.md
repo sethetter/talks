@@ -1,5 +1,7 @@
 # Deploying Web Apps
 
+talks.sethetter.com/deploying-web-apps
+
 ---
 
 You've built the **Best App Ever**, and you're ready to share your creation with
@@ -29,10 +31,10 @@ not what you'll need in 5 years.
 
 ## What if I choose the wrong tool?
 
-- Paying more than you have to.
-- Unnecessary complexity.
-- Tons of features you don't need.
-- Less time to focus on your actual idea.
+- Paying more than you have to
+- Unnecessary complexity
+- Tons of features you don't need
+- Less time to focus on your actual idea
 
 ---
 
@@ -91,6 +93,8 @@ Anything from serverless functions to running servers
 
 ## What about doing it "The Right Way"?
 
+It's never quite so binary.
+
 - What's the goal of this project?
 - Launching is the most important thing
 - DBs and backends are security concerns
@@ -118,12 +122,12 @@ Anything from serverless functions to running servers
 
 Free, convenient hosting for front end applications.
 
-- 🎉 Custom domains
-- 🎉 HTTPS out of the box
-- 🎉 GitHub auto deploys
-- 🎉 Serverless functions
+- Custom domains
+- HTTPS out of the box
+- GitHub auto deploys
+- Serverless functions
 
-https://netlify.com/
+https://netlify.com
 
 ---
 
@@ -136,6 +140,8 @@ https://netlify.com/
 - Bonus points if you're using nextjs
 - API functions for easy backend functionality
 - Still have to decide on a datastore
+
+https://vercel.com
 
 ---
 
@@ -159,7 +165,7 @@ Supabase is open source!
 - Run docker containers for free, scale easily
 - Free tier for postgres DBs!
 
-https://fly.io/
+https://fly.io
 
 ---
 
@@ -169,7 +175,7 @@ https://fly.io/
 - _Starts at $5 a month!_
 - Blank slate, set up and run whatever you need
 
-https://digitalocean.com/
+https://digitalocean.com
 
 ---
 
