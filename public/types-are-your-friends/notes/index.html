@@ -8,10 +8,16 @@
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="./notes.css" />
   <!--[if lt IE 9]>
@@ -23,7 +29,8 @@
 <ul>
 <li><strong>What are types?</strong>
 <ul>
-<li>In a programming language, all variables have a <strong>type</strong>.
+<li>In a programming language, all variables have a
+<strong>type</strong>.
 <ul>
 <li>Primitives: string, integer, function, object, array</li>
 <li>Domain Specific: LoginRequest, User, BlogPost</li>
@@ -35,31 +42,40 @@
 <li>Lists can be sorted, or reversed.</li>
 <li>A user object can tell you what it’s name is.</li>
 </ul></li>
-<li><strong>Programming languages can be typed in different ways.</strong>
+<li><strong>Programming languages can be typed in different
+ways.</strong>
 <ul>
 <li>Dynamically typed
 <ul>
-<li>No need to specify types in your code, they’re determined at runtime.</li>
+<li>No need to specify types in your code, they’re determined at
+runtime.</li>
 <li>Type incompatibilities turn into runtime errors.</li>
 <li>Example: <code>001.js</code></li>
 </ul></li>
 <li>Statically typed
 <ul>
-<li>You specify in your code what type a variable is, what types a function accepts as arguments, and returns as values.</li>
-<li>Before the program is executed, analysis is performed to verify that the right types are used in the right places, and no violations exist.</li>
+<li>You specify in your code what type a variable is, what types a
+function accepts as arguments, and returns as values.</li>
+<li>Before the program is executed, analysis is performed to verify that
+the right types are used in the right places, and no violations
+exist.</li>
 <li>Example: <code>001.ts</code></li>
 </ul></li>
-<li>Many other categories of type systems in between <strong>static</strong> and <strong>dynamic</strong>.
+<li>Many other categories of type systems in between
+<strong>static</strong> and <strong>dynamic</strong>.
 <ul>
 <li>Duck typing, gradual typing, optional typing, etc.</li>
 </ul></li>
 </ul></li>
 <li><strong>Arguments for dynamic typing.</strong>
 <ul>
-<li>Less cognitive overhead; just write your code and don’t worry about types.</li>
-<li>More flexibility; avoid restriction that a type system might impose.</li>
+<li>Less cognitive overhead; just write your code and don’t worry about
+types.</li>
+<li>More flexibility; avoid restriction that a type system might
+impose.</li>
 </ul></li>
-<li><strong>Valid arguments, but I’m here to convince you that static is better.</strong>
+<li><strong>Valid arguments, but I’m here to convince you that static is
+better.</strong>
 <ul>
 <li>Prevent an entire class of potential coding errors, for free.
 <ul>
@@ -70,12 +86,14 @@
 </ul></li>
 <li>Refactor your codebase with confidence.
 <ul>
-<li>Encode changes into the types, compiler guides you through the rest.</li>
+<li>Encode changes into the types, compiler guides you through the
+rest.</li>
 </ul></li>
 <li>More information at your fingertips.
 <ul>
 <li>We can read source code and understand behavior.</li>
-<li>Types provide more information for understanding and shaping our program.</li>
+<li>Types provide more information for understanding and shaping our
+program.</li>
 </ul></li>
 </ul></li>
 </ul>
@@ -85,33 +103,40 @@
 <ul>
 <li>Example: <code>02.js</code>
 <ul>
-<li>This file has an error, and maybe you can spot it quickly, but..</li>
+<li>This file has an error, and maybe you can spot it quickly,
+but..</li>
 <li>When we try to run it, we get weird, unhelpful behavior.</li>
-<li>The <em>information</em> we’ve received (<code>undefined</code>) is very indirect.</li>
+<li>The <em>information</em> we’ve received (<code>undefined</code>) is
+very indirect.</li>
 </ul></li>
 <li>Example: <code>02.ts</code>
 <ul>
-<li>The same error exists here, but, the compiler catches it immediately.</li>
+<li>The same error exists here, but, the compiler catches it
+immediately.</li>
 <li>A bit more code required to define the interface.</li>
-<li>But even a simple example shows that a small time investment up front empowers the tooling to prevent runtime errors.</li>
+<li>But even a simple example shows that a small time investment up
+front empowers the tooling to prevent runtime errors.</li>
 </ul></li>
 </ul></li>
 <li><strong>Refactor with confidence.</strong>
 <ul>
 <li>Example: <code>03.js</code>
 <ul>
-<li>What if the <code>location</code> property is renamed to <code>address</code>?</li>
+<li>What if the <code>location</code> property is renamed to
+<code>address</code>?</li>
 <li>Find and replace?</li>
 </ul></li>
 <li>Example: <code>03.ts</code>
 <ul>
 <li>Shape of data changed.</li>
-<li>Update <code>address</code> property name, and move name inside address.</li>
+<li>Update <code>address</code> property name, and move name inside
+address.</li>
 </ul></li>
 </ul></li>
 <li><strong>Working with types.</strong>
 <ul>
-<li><strong>Example</strong>: Express API with external API as data source.</li>
+<li><strong>Example</strong>: Express API with external API as data
+source.</li>
 <li>Type hints and info as we work with our tools.
 <ul>
 <li>Express route handler function.</li>
@@ -132,7 +157,8 @@
 <li>TMDB API responses.</li>
 </ul></li>
 </ul></li>
-<li><strong>Ultimately, choose the right tool for the job, dependent on many factors.</strong>
+<li><strong>Ultimately, choose the right tool for the job, dependent on
+many factors.</strong>
 <ul>
 <li>What is it that you’re building?</li>
 <li>How big and long-lived will the code base be?</li>

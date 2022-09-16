@@ -7,6 +7,10 @@ the world.
 
 ---
 
+<small>_How do I launch this thing?_</small>
+
+---
+
 ![](/img/deploy-option-logos.png)
 
 ---
@@ -15,33 +19,20 @@ the world.
 
 ---
 
-## What if I choose the wrong tool?
-
----
-
-Paying more than you have to.
-
----
-
-Unnecessary complexity.
-
----
-
-Tons of features you don't need.
-
----
-
-Less time to focus on your actual idea.
-
----
-
 ## How do I know what I need?
-
----
 
 Focus on what you need now,
 
 not what you'll need in 5 years.
+
+---
+
+## What if I choose the wrong tool?
+
+- Paying more than you have to.
+- Unnecessary complexity.
+- Tons of features you don't need.
+- Less time to focus on your actual idea.
 
 ---
 
@@ -54,13 +45,17 @@ not what you'll need in 5 years.
 
 ---
 
-### Do I need a front end?
+# Questions!
+
+---
+
+## Do I need a front end?
 
 - Are your users going to interact with a UI?
 
 ---
 
-### Do I need a database?
+## Do I need a database?
 
 - Do you need to store data?
 - Can you use a managed service like Firebase?
@@ -68,7 +63,9 @@ not what you'll need in 5 years.
 
 ---
 
-### Do I need a back end?
+## Do I need a back end?
+
+Anything from serverless functions to running servers
 
 - If you need a database, yes
 - If you need a place to hold sensitive data
@@ -77,50 +74,37 @@ not what you'll need in 5 years.
 
 ---
 
-### Do I need to integrate with other services?
+## Do I need other services?
 
-- Send emails, texts, or integrating with third party APIs
-- Will most likely need a backend for this
+- Send emails, texts, or other SaaS services
 - Zapier can help here as well
 
 ---
 
-## What if I want to do it "The Right Way"
-
----
+## What about doing it "The Right Way"?
 
 - What's the goal of this project?
 - Launching is the most important thing
-- Databases and backends open up security concerns
+- DBs and backends are security concerns
+- Managing infrastructure is it's own job
 
 ---
 
-## Ask the right questions
+# Some options!
 
 ---
 
-**Do I need a back end?**
+## No code solutions!
 
-- Do you need to store any data?
-- Do you need to integrate with any other services?
+- Forms with Google Form or TypeForm
+- Data with Airtable or Google Sheets
+- Automation with [Zapier](https://zapier.com)
 
----
-
-**Do I need a database?**
-
-- Does it have to be a SQL database?
-- Can you get by with a no-code data solution like Airtable?
+<small>_Full disclosure, I work at Zapier, and am working on some cool things! Lets' talk about it :)_</snall>
 
 ---
 
-**Do I need any other services?**
-
-- Email, text, or push notifications?
-- Detailed logging?
-
----
-
-## Do you need to store any data?
+# Front-end only!
 
 ---
 
@@ -128,176 +112,117 @@ not what you'll need in 5 years.
 
 Free, convenient hosting for front end applications.
 
----
-
-🎉 Custom domains.
-
-🎉 HTTPS out of the box.
-
-🎉 GitHub auto deploys.
-
----
-
-Also has some "serverless" features.
-
----
-
-### Check it out!
+- 🎉 Custom domains
+- 🎉 HTTPS out of the box
+- 🎉 GitHub auto deploys
+- 🎉 Serverless functions
 
 https://netlify.com/
 
 ---
 
-**I'm pretty sure I need a backend**
+# Managed backends
+
+---
+
+## Vercel
+
+- Bonus points if you're using nextjs
+- API functions for easy backend functionality
+- Still have to decide on a datastore
+
+---
+
+## Firebase / Supabase
+
+- Datastore, auth, storage, and more
+- No infrastructure to manage
+- Avoid wheel reinvention
+
+Supabase is open source!
+
+---
+
+# Always running server
 
 ---
 
 ## Fly.io
 
-Platform as a Service (PaaS)
-
----
-
-Have a backend, databases, etc, with much less hassle.
-
----
-
-Cost is a bit higher, but easier to get started and manage.
-
----
-
-### Check it out!
+- Platform as a Service (PaaS)
+- Run docker containers for free, scale easily
+- Free tier for postgres DBs!
 
 https://fly.io/
 
 ---
 
-## Serverless functions
-
-- Netlify Functions
-- Vercel Functions
-
----
-
 ## Digital Ocean
 
-Plain old servers, do what you want with them!
-
----
-
-Manually configure the server to run what you need.
-
----
-
-_Starts at $5 a month!_
-
----
-
-Most cost effective, more manual work involved.
-
----
-
-Blank slate, set up and run whatever you need.
-
----
-
-### Check it out!
+- Plain old servers, do what you want with them
+- _Starts at $5 a month!_
+- Blank slate, set up and run whatever you need
 
 https://digitalocean.com/
 
 ---
 
+# Full Cloud
+
+---
+
 ## AWS / Google Cloud / Azure
 
-Cloud behemoths. All the power you could ever need.
+- Cloud behemoths, all the power you could need
+- Offer some flavor of the managed services above
+  - Just harder to work with
+- Can become very complex very easily
+- **_Don't go this route unless you're sure you need it!_**
 
 ---
 
-_Don't go this route unless you're sure you need it!_
+## Kubernetes
+
+- Container orchestration platform
+- Can do awesome things for internal operations
+- Highest complexity option, plan accordingly
 
 ---
 
-Containers, API Gateways, Serverless, oh my!
+## When is complexity worth it?
+
+- **_Know what you're gaining_**
+- Need more control: performance, cost, etc
+- Large scales, hitting limits of other services
+- You can afford engineers to manage it
 
 ---
 
-<img src="/img/aws-services.png" style="max-width:35%">
+## Terraform!
 
-**161** different services!
-
----
-
-**Major new infrastructure complexity.**
-
----
-
-Have an expert on hand, watch billing closely.
-
----
-
-## We definitely need AWS
-
-If you're going to embrace the complexity..
-
----
-
-## Infrastructure As Code
-
-Don't get lost in the cloud console.
-
-Define your infrastructure in version controlled files.
-
----
-
-Terraform, Docker, Ansible, Packer, etc.
-
----
-
-## Check it out!
-
-- **Terraform**: https://www.terraform.io/
-  - Manage your cloud resources.
-- **Ansible**: https://www.ansible.com/
-  - Configure your servers.
-- **Docker**: https://www.docker.com/
-  - "Containerize" your app.
+- Infrastructure as code, version controlled
+- Single source of truth for your infrastrcture
+- Many "providers": AWS, Netlify, etc etc
 
 ---
 
 # What about migrating later?
 
----
-
-# Purpose-built platforms
-
-- Shopify for e-commerce
-- [other examples]
-
----
-
-# No code solutions!
-
-- Automation with [Zapier](https://zapier.com)
+- Understand..
+  - where your data is stored
+  - what format it is in
+  - how you can move it between services
+- Zapier Transfer for moving data around!
 
 ---
 
 ### What's the moral of this story?
 
----
-
-Infrastructure is it's own beast. Keep it tame!
-
----
-
-Only use what you need, you can adapt later.
-
----
-
-Netlify is incredible, get started with that.
-
----
-
-If you need the complexity, keep it tame!
+- Infrastructure is it's own beast. Keep it tame!
+- Only use what you need, you can adapt later
+- Don't reinvent the wheel, use managed services
+- If you need the complexity, keep it tame
+- No code can accomplish _a lot_ these days
 
 ---
 

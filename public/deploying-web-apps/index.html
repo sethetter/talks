@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>reveal-md</title>
+    <link rel="stylesheet" href="./css/reveal.css" />
+    <link rel="stylesheet" href="./css/theme/solarized.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+    <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"># Deploying Web Apps
+</script></section><section  data-markdown><script type="text/template">
+You've built the **Best App Ever**, and you're ready to share your creation with
+the world.
+</script></section><section  data-markdown><script type="text/template">
+<small>_How do I launch this thing?_</small>
+</script></section><section  data-markdown><script type="text/template">
+![](/img/deploy-option-logos.png)
+</script></section><section  data-markdown><script type="text/template">
+**How do you choose?**
+</script></section><section  data-markdown><script type="text/template">
+## How do I know what I need?
+
+Focus on what you need now,
+
+not what you'll need in 5 years.
+</script></section><section  data-markdown><script type="text/template">
+## What if I choose the wrong tool?
+
+- Paying more than you have to.
+- Unnecessary complexity.
+- Tons of features you don't need.
+- Less time to focus on your actual idea.
+</script></section><section  data-markdown><script type="text/template">
+## Components of increasing complexity
+
+- Front end
+- Back end
+- Database
+- Integrations
+</script></section><section  data-markdown><script type="text/template">
+# Questions!
+</script></section><section  data-markdown><script type="text/template">
+## Do I need a front end?
+
+- Are your users going to interact with a UI?
+</script></section><section  data-markdown><script type="text/template">
+## Do I need a database?
+
+- Do you need to store data?
+- Can you use a managed service like Firebase?
+- Is a no-code datastore like Airtable viable?
+</script></section><section  data-markdown><script type="text/template">
+## Do I need a back end?
+
+Anything from serverless functions to running servers
+
+- If you need a database, yes
+- If you need a place to hold sensitive data
+- If you need to integrate with other services
+  - ..and can't expose your credentials on the front end
+</script></section><section  data-markdown><script type="text/template">
+## Do I need other services?
+
+- Send emails, texts, or other SaaS services
+- Zapier can help here as well
+</script></section><section  data-markdown><script type="text/template">
+## What about doing it "The Right Way"?
+
+- What's the goal of this project?
+- Launching is the most important thing
+- DBs and backends are security concerns
+- Managing infrastructure is it's own job
+</script></section><section  data-markdown><script type="text/template">
+# Some options!
+</script></section><section  data-markdown><script type="text/template">
+## No code solutions!
+
+- Forms with Google Form or TypeForm
+- Data with Airtable or Google Sheets
+- Automation with [Zapier](https://zapier.com)
+
+<small>_Full disclosure, I work at Zapier, and am working on some cool things! Lets' talk about it :)_</snall>
+</script></section><section  data-markdown><script type="text/template">
+# Front-end only!
+</script></section><section  data-markdown><script type="text/template">
+## Netlify
+
+Free, convenient hosting for front end applications.
+
+- 🎉 Custom domains
+- 🎉 HTTPS out of the box
+- 🎉 GitHub auto deploys
+- 🎉 Serverless functions
+
+https://netlify.com/
+</script></section><section  data-markdown><script type="text/template">
+# Managed backends
+</script></section><section  data-markdown><script type="text/template">
+## Vercel
+
+- Bonus points if you're using nextjs
+- API functions for easy backend functionality
+- Still have to decide on a datastore
+</script></section><section  data-markdown><script type="text/template">
+## Firebase / Supabase
+
+- Datastore, auth, storage, and more
+- No infrastructure to manage
+- Avoid wheel reinvention
+
+Supabase is open source!
+</script></section><section  data-markdown><script type="text/template">
+# Always running server
+</script></section><section  data-markdown><script type="text/template">
+## Fly.io
+
+- Platform as a Service (PaaS)
+- Run docker containers for free, scale easily
+- Free tier for postgres DBs!
+
+https://fly.io/
+</script></section><section  data-markdown><script type="text/template">
+## Digital Ocean
+
+- Plain old servers, do what you want with them
+- _Starts at $5 a month!_
+- Blank slate, set up and run whatever you need
+
+https://digitalocean.com/
+</script></section><section  data-markdown><script type="text/template">
+# Full Cloud
+</script></section><section  data-markdown><script type="text/template">
+## AWS / Google Cloud / Azure
+
+- Cloud behemoths, all the power you could need
+- Offer some flavor of the managed services above
+  - Just harder to work with
+- Can become very complex very easily
+- **_Don't go this route unless you're sure you need it!_**
+</script></section><section  data-markdown><script type="text/template">
+## Kubernetes
+
+- Container orchestration platform
+- Can do awesome things for internal operations
+- Highest complexity option, plan accordingly
+</script></section><section  data-markdown><script type="text/template">
+## When is complexity worth it?
+
+- **_Know what you're gaining_**
+- Need more control: performance, cost, etc
+- Large scales, hitting limits of other services
+- You can afford engineers to manage it
+</script></section><section  data-markdown><script type="text/template">
+## Terraform!
+
+- Infrastructure as code, version controlled
+- Single source of truth for your infrastrcture
+- Many "providers": AWS, Netlify, etc etc
+</script></section><section  data-markdown><script type="text/template">
+# What about migrating later?
+
+- Understand..
+  - where your data is stored
+  - what format it is in
+  - how you can move it between services
+- Zapier Transfer for moving data around!
+</script></section><section  data-markdown><script type="text/template">
+### What's the moral of this story?
+
+- Infrastructure is it's own beast. Keep it tame!
+- Only use what you need, you can adapt later
+- Don't reinvent the wheel, use managed services
+- If you need the complexity, keep it tame
+- No code can accomplish _a lot_ these days
+</script></section><section  data-markdown><script type="text/template">
+**Want to learn more? Join devICT!**
+
+devict.org/slack
+</script></section></div>
+    </div>
+
+    <script src="./js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './plugin/zoom-js/zoom.js', async: true },
+        { src: './plugin/notes/notes.js', async: true },
+        { src: './plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
