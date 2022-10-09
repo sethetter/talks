@@ -12,6 +12,7 @@ for f in $(ls talks); do \
 
   npx reveal-md --theme=solarized --static=public talks/$f/slides.md
   mv public/slides.html public/$f.html
+  rm public/slides.html public/index.html
 
   mkdir -p public/img
   if [[ -z $f/img ]]; then
@@ -19,4 +20,4 @@ for f in $(ls talks); do \
   fi
 done
 
-echo 'body .reveal { font-size: 30px; }' >> public/css/reveal.css
+echo 'body .reveal { font-size: 26px; }' >> public/dist/reveal.css

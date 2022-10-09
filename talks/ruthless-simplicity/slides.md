@@ -1,5 +1,7 @@
 # Ruthless Simplicity
 
+talks.sethetter.com/ruthless-simplicity
+
 ---
 
 # Who's this guy?
