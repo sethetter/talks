@@ -28,17 +28,17 @@ ok, first, a few things
 
 ----
 
-## Simple / Complex is a spectrum
+## Simplicity is a spectrum
 
 like most things
 
 ----
 
-## Its all very subjective and contextual
+## Simplicity is subjective and contextual
 
 something complicated to me might be simple to you
 
----
+----
 
 ## There are no universally correct answers
 
@@ -47,6 +47,31 @@ just some guidelines to help you navigate decisions
 ---
 
 ok really though
+
+---
+
+# Simplicity is good!
+
+right?
+
+----
+
+but why?
+
+----
+
+## When things are simple, they are..
+
+- easier to remember
+- easier to understand
+- easier to do
+- easier to...
+
+----
+
+## We have goals to accomplish
+
+complexity gets in the way
 
 ---
 
@@ -96,31 +121,6 @@ it's bad, remember?
 
 ---
 
-# Simplicity is good
-
-right?
-
-----
-
-but why?
-
-----
-
-## When things are simple, they are..
-
-- easier to remember
-- easier to understand
-- easier to do
-- easier to...
-
-----
-
-## We have goals to accomplish
-
-complexity gets in the way
-
----
-
 # When things are complex..
 
 ----
@@ -146,6 +146,14 @@ complexity gets in the way
 - provides 10 features, you need 2 of them
 - requires significant refactor
 - affects unrelated components in the system
+
+----
+
+## Putting important info in your UI
+
+- buried under less important info
+- not easy to understand
+- wrapped in distracting visuals
 
 ---
 
@@ -174,6 +182,14 @@ complexity gets in the way
 - does one thing well
 - simple and transparent interface
 - drop in without refactoring
+
+----
+
+## Putting important info in your UI
+
+- draws the users' attention directly to it
+- directly speaks to the users' need
+- presented without distraction
 
 ---
 
