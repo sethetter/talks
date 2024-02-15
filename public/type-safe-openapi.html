@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>reveal-md</title>
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./dist/reset.css" />
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="./dist/theme/solarized.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
+
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"># type-safe openapi
+
+talks.sethetter.com/type-safe-openapi
+</script></section><section ><section data-markdown><script type="text/template">
+# what is openapi?
+</script></section><section data-markdown><script type="text/template">
+## openapi
+
+standard format for documenting web APIs
+</script></section></section><section ><section data-markdown><script type="text/template">
+# why would you use it?
+
+helps people know how to use your API
+</script></section><section data-markdown><script type="text/template">
+# why would you use it?
+
+helps ~people~ ai know how to use your API
+</script></section></section><section ><section data-markdown><script type="text/template">
+# pain points
+
+why might you _not_ use openapi?
+</script></section><section data-markdown><script type="text/template">
+# pain points
+
+- maintaining by hand
+- code getting out of alignment
+- meeting documentation standards
+</script></section></section><section ><section data-markdown><script type="text/template">
+# solutions?
+</script></section><section data-markdown><script type="text/template">
+## maintaining by hand
+
+generate it from code (but don't abstract away!)
+
+_start with openapi, even if defined in code_
+</script></section><section data-markdown><script type="text/template">
+## code getting out of alignment
+
+generate types from spec, attach to handlers
+</script></section><section data-markdown><script type="text/template">
+## meeting documentation standards
+
+1. type constraints in your spec source
+2. linting on your generated spec
+</script></section></section><section  data-markdown><script type="text/template">
+demo!
+</script></section></div>
+    </div>
+
+    <script src="./dist/reveal.js"></script>
+
+    <script src="./plugin/markdown/markdown.js"></script>
+    <script src="./plugin/highlight/highlight.js"></script>
+    <script src="./plugin/zoom/zoom.js"></script>
+    <script src="./plugin/notes/notes.js"></script>
+    <script src="./plugin/math/math.js"></script>
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
